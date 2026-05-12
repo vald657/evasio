@@ -1,6 +1,6 @@
 <?php
 // =============================================
-//  ÉVASIO — Connexion à la base de données
+//  IUC — Connexion à la base de données
 // =============================================
 
 define('DB_HOST',    'localhost');
@@ -9,7 +9,7 @@ define('DB_USER',    'root');
 define('DB_PASS',    '');
 define('DB_CHARSET', 'utf8mb4');
 
-define('APP_NAME',   'Évasio');
+define('APP_NAME',   'IUC');
 define('APP_URL',    'http://localhost/evasio');
 define('APP_ROOT',   dirname(__DIR__));
 

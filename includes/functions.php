@@ -1,6 +1,6 @@
 <?php
 // =============================================
-//  ÉVASIO — Fonctions globales
+//  IUC — Fonctions globales
 // =============================================
 
 require_once dirname(__DIR__) . '/config/database.php';
@@ -169,11 +169,11 @@ function initialesAvatar(string $prenom, string $nom): string {
 
 function couleurAvatar(int $userId): string {
     $couleurs = [
-        'linear-gradient(135deg,#4648d4,#6063ee)',
-        'linear-gradient(135deg,#b4136d,#fd56a7)',
+        'linear-gradient(135deg,#a70016,#cc2229)',
+        'linear-gradient(135deg,#1b6d24,#2e7d32)',
         'linear-gradient(135deg,#1a7a4a,#34c97a)',
-        'linear-gradient(135deg,#904900,#e07000)',
-        'linear-gradient(135deg,#4648d4,#b4136d)',
+        'linear-gradient(135deg,#00567b,#00709e)',
+        'linear-gradient(135deg,#a70016,#1b6d24)',
     ];
     return $couleurs[$userId % count($couleurs)];
 }

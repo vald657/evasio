@@ -9,11 +9,10 @@ SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+01:00";
 
-CREATE DATABASE IF NOT EXISTS `evasio_db`
-  DEFAULT CHARACTER SET utf8mb4
-  COLLATE utf8mb4_unicode_ci;
-
-USE `evasio_db`;
+-- NOTE DÉPLOIEMENT o2switch :
+-- Créez la base de données depuis cPanel (MySQL Databases) AVANT d'importer ce fichier.
+-- Sélectionnez ensuite cette base dans phpMyAdmin, puis importez ce fichier.
+-- Ne pas décommenter les lignes CREATE DATABASE / USE — elles sont gérées par cPanel.
 
 -- =============================================
 -- TABLE : departements

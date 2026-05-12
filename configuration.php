@@ -61,7 +61,7 @@ foreach($rows as $r) $params[$r['cle']]=$r['valeur'];
 $questionsRaw=$params['questions_securite']??'';
 $questionsTextarea=$questionsRaw?implode("\n",explode('|',$questionsRaw)):'';
 
-$pageTitle='Paramètres système'; $pageSubtitle='Configuration de l\'application Évasio';
+$pageTitle='Paramètres système'; $pageSubtitle='Configuration de l\'application IUC';
 require_once __DIR__.'/includes/header.php';
 ?>
 <?php if($success): ?><div class="alert alert-success mb-16"><i class="fas fa-check-circle"></i><span><?=h($success)?></span></div><?php endif; ?>
@@ -77,7 +77,7 @@ require_once __DIR__.'/includes/header.php';
     <div class="card-body">
       <div class="form-grid">
         <div class="form-group"><label class="form-label">Nom de l'application</label>
-        <input type="text" name="app_nom" class="form-control" value="<?=h($params['app_nom']??'Évasio')?>"/></div>
+        <input type="text" name="app_nom" class="form-control" value="<?=h($params['app_nom']??'IUC')?>"/></div>
         <div class="form-group"><label class="form-label">Slogan</label>
         <input type="text" name="app_slogan" class="form-control" value="<?=h($params['app_slogan']??'')?>"/></div>
       </div>

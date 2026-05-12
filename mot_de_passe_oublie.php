@@ -78,20 +78,17 @@ if($etape===2) {
 <!DOCTYPE html>
 <html lang="fr">
 <head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Mot de passe oublié — Évasio</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<title>Mot de passe oublié — IUC</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
-<link rel="stylesheet" href="<?=APP_URL?>/assets/css/style.css"/></head>
+<link rel="stylesheet" href="<?=APP_URL?>/assets/css/style.css?v=<?=filemtime(__DIR__.'/assets/css/style.css')?>"/></head>
 <body>
 <div class="login-page">
 <div class="login-card">
 
   <div class="login-logo">
-    <svg width="44" height="44" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="#f5f2fe"/>
-    <circle cx="20" cy="13" r="5.5" fill="none" stroke="#b4136d" stroke-width="2"/>
-    <rect x="11" y="20" width="18" height="14" rx="3" fill="#4648d4"/>
-    <polyline points="15,27 18.5,31 25,23" stroke="#b4136d" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
-    <span class="login-logo-text">Évasio</span>
+    <img src="<?=APP_URL?>/assets/img/logo_iuc.png" alt="IUC" width="52" height="52" style="object-fit:contain;"/>
+    <span class="login-logo-text">IUC</span>
   </div>
 
   <!-- Indicateur d'étapes -->

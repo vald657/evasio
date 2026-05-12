@@ -1,6 +1,6 @@
 <?php
 // =============================================
-//  ÉVASIO — Sidebar navigation
+//  IUC — Sidebar navigation
 // =============================================
 $user     = utilisateurCourant();
 $role     = $user['role'];
@@ -43,20 +43,10 @@ if ($role === 'manager') {
 ?>
 <aside class="sidebar" id="sidebar">
 
-  <!-- Logo -->
+  <!-- Logo IUC -->
   <div class="sidebar-logo">
-    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect width="40" height="40" rx="10" fill="#f5f2fe"/>
-      <circle cx="20" cy="13" r="5.5" fill="none" stroke="#b4136d" stroke-width="2"/>
-      <line x1="20" y1="7.5" x2="20" y2="4.5" stroke="#b4136d" stroke-width="2" stroke-linecap="round"/>
-      <line x1="24.9" y1="9.1" x2="27" y2="7" stroke="#b4136d" stroke-width="2" stroke-linecap="round"/>
-      <line x1="26.5" y1="13" x2="29.5" y2="13" stroke="#b4136d" stroke-width="2" stroke-linecap="round"/>
-      <line x1="15.1" y1="9.1" x2="13" y2="7" stroke="#b4136d" stroke-width="2" stroke-linecap="round"/>
-      <line x1="13.5" y1="13" x2="10.5" y2="13" stroke="#b4136d" stroke-width="2" stroke-linecap="round"/>
-      <rect x="11" y="20" width="18" height="14" rx="3" fill="#4648d4"/>
-      <polyline points="15,27 18.5,31 25,23" stroke="#b4136d" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-    </svg>
-    <span class="sidebar-logo-text">Évasio</span>
+    <img src="<?= APP_URL ?>/assets/img/logo_iuc.png" alt="IUC" width="44" height="44" style="object-fit:contain;"/>
+    <span class="sidebar-logo-text">IUC</span>
   </div>
 
   <!-- User card -->

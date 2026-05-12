@@ -1,36 +1,36 @@
 /* =============================================
-   ÉVASIO — Design System "Élan Moderne"
-   Charte graphique complète
+   IUC — Design System
+   Charte graphique IUC
 ============================================= */
 
 /* Google Fonts importées via PHP includes */
 
 :root {
   /* Couleurs principales */
-  --primary:              #4648d4;
-  --primary-container:    #6063ee;
+  --primary:              #a70016;
+  --primary-container:    #cc2229;
   --on-primary:           #ffffff;
-  --secondary:            #b4136d;
-  --secondary-container:  #fd56a7;
+  --secondary:            #1b6d24;
+  --secondary-container:  #a0f399;
   --on-secondary:         #ffffff;
-  --tertiary:             #904900;
+  --tertiary:             #00567b;
   --on-tertiary:          #ffffff;
 
   /* Surfaces */
-  --background:           #fcf8ff;
-  --surface:              #fcf8ff;
-  --surface-low:          #f5f2fe;
-  --surface-container:    #efecf8;
-  --surface-high:         #e9e6f3;
-  --surface-highest:      #e4e1ed;
+  --background:           #fcf9f8;
+  --surface:              #fcf9f8;
+  --surface-low:          #f6f3f2;
+  --surface-container:    #f0eded;
+  --surface-high:         #eae7e7;
+  --surface-highest:      #e4e2e1;
 
   /* Textes */
-  --on-surface:           #1b1b23;
-  --on-surface-variant:   #464554;
-  --outline:              #767586;
-  --outline-variant:      #c7c4d7;
-  --inverse-surface:      #303038;
-  --inverse-on-surface:   #f2effb;
+  --on-surface:           #1b1c1c;
+  --on-surface-variant:   #5c403d;
+  --outline:              #906f6c;
+  --outline-variant:      #e5bdba;
+  --inverse-surface:      #303030;
+  --inverse-on-surface:   #f3f0f0;
 
   /* Statuts */
   --success:              #1a7a4a;
@@ -39,8 +39,8 @@
   --error-container:      #ffdad6;
   --warning:              #904900;
   --warning-container:    #ffdcc5;
-  --info:                 #4648d4;
-  --info-container:       #e1e0ff;
+  --info:                 #00567b;
+  --info-container:       #d6ecff;
 
   /* Rayons */
   --radius-sm:    0.5rem;
@@ -50,15 +50,15 @@
   --radius-xl:    3rem;
   --radius-full:  9999px;
 
-  /* Ombres teintées indigo */
-  --shadow-sm:    0 2px 8px rgba(70,72,212,0.06);
-  --shadow-md:    0 4px 20px rgba(70,72,212,0.10);
-  --shadow-lg:    0 8px 32px rgba(70,72,212,0.14);
-  --shadow-xl:    0 16px 48px rgba(70,72,212,0.18);
+  /* Ombres teintées IUC */
+  --shadow-sm:    0 2px 8px rgba(167,0,22,0.06);
+  --shadow-md:    0 4px 20px rgba(167,0,22,0.10);
+  --shadow-lg:    0 8px 32px rgba(167,0,22,0.14);
+  --shadow-xl:    0 16px 48px rgba(167,0,22,0.18);
 
   /* Typographie */
-  --font-title:   'Poppins', sans-serif;
-  --font-body:    'Plus Jakarta Sans', sans-serif;
+  --font-title:   'Montserrat', sans-serif;
+  --font-body:    'Inter', sans-serif;
 
   /* Layout */
   --sidebar-width:   260px;
@@ -252,8 +252,8 @@ input, select, textarea { font-family: var(--font-body); }
 
 .nav-item.active {
   background: linear-gradient(135deg,
-    rgba(70,72,212,0.12),
-    rgba(180,19,109,0.06));
+    rgba(167,0,22,0.12),
+    rgba(27,109,36,0.06));
   color: var(--primary);
   font-weight: 600;
 }
@@ -298,7 +298,7 @@ input, select, textarea { font-family: var(--font-body); }
 ============================================= */
 .topbar {
   height: var(--topbar-height);
-  background: rgba(252,248,255,0.88);
+  background: rgba(252,249,248,0.88);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--outline-variant);
@@ -401,11 +401,11 @@ input, select, textarea { font-family: var(--font-body); }
 .btn-primary {
   background: linear-gradient(135deg, var(--primary), var(--primary-container));
   color: white;
-  box-shadow: 0 4px 14px rgba(70,72,212,0.30);
+  box-shadow: 0 4px 14px rgba(167,0,22,0.30);
 }
 .btn-primary:hover {
   transform: scale(1.02);
-  box-shadow: 0 6px 20px rgba(70,72,212,0.42);
+  box-shadow: 0 6px 20px rgba(167,0,22,0.42);
   color: white;
 }
 
@@ -592,7 +592,7 @@ input, select, textarea { font-family: var(--font-body); }
 }
 
 .kpi-icon.indigo  { background: var(--info-container);    color: var(--primary); }
-.kpi-icon.pink    { background: rgba(180,19,109,0.10);    color: var(--secondary); }
+.kpi-icon.pink    { background: rgba(27,109,36,0.10);    color: var(--secondary); }
 .kpi-icon.green   { background: var(--success-container); color: var(--success); }
 .kpi-icon.orange  { background: var(--warning-container); color: var(--tertiary); }
 .kpi-icon.red     { background: var(--error-container);   color: var(--error); }
@@ -654,7 +654,7 @@ input, select, textarea { font-family: var(--font-body); }
   font-weight: 600;
 }
 .role-employe  { background: var(--info-container);    color: var(--primary); }
-.role-manager  { background: rgba(180,19,109,0.10);    color: var(--secondary); }
+.role-manager  { background: rgba(27,109,36,0.10);    color: var(--secondary); }
 .role-rh       { background: var(--success-container); color: var(--success); }
 .role-admin    { background: var(--warning-container); color: var(--tertiary); }
 
@@ -771,7 +771,7 @@ tbody td {
 
 .form-control:focus {
   border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(70,72,212,0.12);
+  box-shadow: 0 0 0 3px rgba(167,0,22,0.12);
 }
 
 .form-control::placeholder { color: var(--outline); }
@@ -788,7 +788,7 @@ textarea.form-control {
 }
 
 select.form-control {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23767586' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23906f6c' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 14px center;
   padding-right: 38px;
@@ -879,7 +879,7 @@ select.form-control {
 .alert-info {
   background: var(--info-container);
   color: var(--info);
-  border: 1px solid rgba(70,72,212,0.20);
+  border: 1px solid rgba(167,0,22,0.20);
 }
 
 /* Toast (notification flottante) */
@@ -1094,7 +1094,7 @@ select.form-control {
   font-weight: 700;
 }
 .cal-cell.absence {
-  background: rgba(180,19,109,0.12);
+  background: rgba(27,109,36,0.12);
   color: var(--secondary);
   font-weight: 600;
 }
@@ -1261,7 +1261,7 @@ select.form-control {
   display: inline-block;
 }
 .spinner.dark {
-  border-color: rgba(70,72,212,0.2);
+  border-color: rgba(167,0,22,0.2);
   border-top-color: var(--primary);
 }
 @keyframes spin {
@@ -1276,7 +1276,7 @@ select.form-control {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #f5f2fe 0%, #fcf8ff 50%, #fff0f7 100%);
+  background: linear-gradient(135deg, #f6f3f2 0%, #fcf9f8 50%, #fff0f0 100%);
   padding: 24px;
   position: relative;
   overflow: hidden;
@@ -1287,7 +1287,7 @@ select.form-control {
   position: absolute;
   top: -120px; right: -120px;
   width: 400px; height: 400px;
-  background: radial-gradient(circle, rgba(70,72,212,0.10) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(167,0,22,0.10) 0%, transparent 70%);
   border-radius: var(--radius-full);
 }
 
@@ -1296,7 +1296,7 @@ select.form-control {
   position: absolute;
   bottom: -100px; left: -100px;
   width: 350px; height: 350px;
-  background: radial-gradient(circle, rgba(180,19,109,0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(27,109,36,0.08) 0%, transparent 70%);
   border-radius: var(--radius-full);
 }
 

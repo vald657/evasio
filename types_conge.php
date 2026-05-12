@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && verifyCsrf($_POST['csrf_token'] ?? 
         $id = (int)($_POST['id'] ?? 0);
         $nom = sanitize($_POST['nom'] ?? '');
         $desc = sanitize($_POST['description'] ?? '');
-        $couleur = $_POST['couleur'] ?? '#4648d4';
+        $couleur = $_POST['couleur'] ?? '#a70016';
         $maxJ = (int)($_POST['jours_max_annuel'] ?? 30);
         $just = (int)($_POST['justificatif_requis'] ?? 0);
         if (!$nom) {
@@ -121,7 +121,7 @@ require_once __DIR__ . '/includes/header.php';
                 </div>
                 <div class="form-grid">
                     <div class="form-group"><label class="form-label">Couleur</label>
-                        <input type="color" name="couleur" class="form-control" style="height:44px;padding:4px 8px;border-radius:var(--radius-full)" value="<?= h($edit ? $edit['couleur'] : '#4648d4') ?>" />
+                        <input type="color" name="couleur" class="form-control" style="height:44px;padding:4px 8px;border-radius:var(--radius-full)" value="<?= h($edit ? $edit['couleur'] : '#a70016') ?>" />
                     </div>
                     <div class="form-group"><label class="form-label">Jours max/an</label>
                         <input type="number" name="jours_max_annuel" class="form-control" min="1" max="365" value="<?= $edit ? $edit['jours_max_annuel'] : 30 ?>" />

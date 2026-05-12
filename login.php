@@ -1,6 +1,6 @@
 <?php
 // =============================================
-//  ÉVASIO — Page de connexion
+//  IUC — Page de connexion
 // =============================================
 require_once __DIR__ . '/config/database.php';
 require_once __DIR__ . '/includes/functions.php';
@@ -67,30 +67,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Connexion — Évasio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <title>Connexion — IUC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="<?= APP_URL ?>/assets/css/style.css"/>
+  <link rel="stylesheet" href="<?= APP_URL ?>/assets/css/style.css?v=<?= filemtime(__DIR__.'/assets/css/style.css') ?>"/>
 </head>
 <body>
 
 <div class="login-page">
   <div class="login-card">
 
-    <!-- Logo -->
+    <!-- Logo IUC -->
     <div class="login-logo">
-      <svg width="48" height="48" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="40" height="40" rx="10" fill="#f5f2fe"/>
-        <circle cx="20" cy="13" r="5.5" fill="none" stroke="#b4136d" stroke-width="2"/>
-        <line x1="20" y1="7.5" x2="20" y2="4.5" stroke="#b4136d" stroke-width="2" stroke-linecap="round"/>
-        <line x1="24.9" y1="9.1" x2="27" y2="7" stroke="#b4136d" stroke-width="2" stroke-linecap="round"/>
-        <line x1="26.5" y1="13" x2="29.5" y2="13" stroke="#b4136d" stroke-width="2" stroke-linecap="round"/>
-        <line x1="15.1" y1="9.1" x2="13" y2="7" stroke="#b4136d" stroke-width="2" stroke-linecap="round"/>
-        <line x1="13.5" y1="13" x2="10.5" y2="13" stroke="#b4136d" stroke-width="2" stroke-linecap="round"/>
-        <rect x="11" y="20" width="18" height="14" rx="3" fill="#4648d4"/>
-        <polyline points="15,27 18.5,31 25,23" stroke="#b4136d" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-      </svg>
-      <span class="login-logo-text">Évasio</span>
+      <img src="<?= APP_URL ?>/assets/img/logo_iuc.png" alt="IUC" width="56" height="56" style="object-fit:contain;"/>
+      <span class="login-logo-text">IUC</span>
     </div>
 
     <h1 class="login-title">Bienvenue 👋</h1>
@@ -166,7 +156,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div style="text-align:center; margin-top:28px; padding-top:20px; border-top:1px solid var(--outline-variant);">
       <p style="font-size:12px; color:var(--outline);">
         <i class="fas fa-shield-alt" style="margin-right:5px;color:var(--primary)"></i>
-        Connexion sécurisée — Évasio v1.0
+        Connexion sécurisée — IUC v1.0
       </p>
     </div>
 

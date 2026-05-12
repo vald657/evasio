@@ -1,6 +1,6 @@
 <?php
 // =============================================
-//  ÉVASIO — Header HTML (head + topbar)
+//  IUC — Header HTML (head + topbar)
 //  Paramètres attendus :
 //    $pageTitle  : titre de la page
 //    $pageSubtitle (optionnel)
@@ -11,7 +11,7 @@ requireAuth();
 $user          = utilisateurCourant();
 $nbNotifs      = compterNotificationsNonLues((int)$user['id']);
 $today         = dateFr(date('Y-m-d'));
-$pageTitle     = $pageTitle     ?? 'Évasio';
+$pageTitle     = $pageTitle     ?? 'IUC';
 $pageSubtitle  = $pageSubtitle  ?? '';
 ?>
 <!DOCTYPE html>
@@ -19,11 +19,11 @@ $pageSubtitle  = $pageSubtitle  ?? '';
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title><?= h($pageTitle) ?> — Évasio</title>
+  <title><?= h($pageTitle) ?> — IUC</title>
   <link rel="icon" type="image/svg+xml" href="<?= APP_URL ?>/assets/img/favicon.svg"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="<?= APP_URL ?>/assets/css/style.css"/>
+  <link rel="stylesheet" href="<?= APP_URL ?>/assets/css/style.css?v=<?= filemtime(dirname(__DIR__).'/assets/css/style.css') ?>"/>
   <?php if (isset($extraCSS)): ?>
     <?= $extraCSS ?>
   <?php endif; ?>

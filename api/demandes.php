@@ -1,6 +1,6 @@
 <?php
 // =============================================
-//  ÉVASIO — API Demandes de congé
+//  IUC — API Demandes de congé
 // =============================================
 require_once dirname(__DIR__) . '/includes/functions.php';
 requireAuth();

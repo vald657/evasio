@@ -1,6 +1,6 @@
 <?php
 // =============================================
-//  ÉVASIO — Export PDF / Excel
+//  IUC — Export PDF / Excel
 // =============================================
 require_once dirname(__DIR__) . '/includes/functions.php';
 requireRole(['rh', 'admin']);
@@ -71,21 +71,21 @@ if ($format === 'excel') {
     echo '<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"/>
     <title>' . $titre . '</title>
     <style>
-      body{font-family:Arial,sans-serif;font-size:11pt;color:#1b1b23;margin:20px}
-      h1{color:#4648d4;font-size:16pt;margin-bottom:4px}
-      p{color:#767586;font-size:10pt;margin-bottom:20px}
+      body{font-family:Arial,sans-serif;font-size:11pt;color:#1b1c1c;margin:20px}
+      h1{color:#a70016;font-size:16pt;margin-bottom:4px}
+      p{color:#906f6c;font-size:10pt;margin-bottom:20px}
       table{width:100%;border-collapse:collapse;font-size:9.5pt}
-      th{background:#4648d4;color:white;padding:8px 10px;text-align:left;font-size:9pt}
-      td{padding:7px 10px;border-bottom:1px solid #e4e1ed}
-      tr:nth-child(even) td{background:#f5f2fe}
+      th{background:#a70016;color:white;padding:8px 10px;text-align:left;font-size:9pt}
+      td{padding:7px 10px;border-bottom:1px solid #e4e2e1}
+      tr:nth-child(even) td{background:#f6f3f2}
       .badge{padding:2px 8px;border-radius:20px;font-size:8.5pt;font-weight:bold}
       .approved{background:#d6f5e3;color:#1a7a4a}
       .refused {background:#ffdad6;color:#ba1a1a}
       .pending  {background:#ffdcc5;color:#904900}
-      .footer{margin-top:24px;font-size:9pt;color:#767586;text-align:right}
+      .footer{margin-top:24px;font-size:9pt;color:#906f6c;text-align:right}
       @media print{body{margin:0}button{display:none}}
     </style></head><body>
-    <button onclick="window.print()" style="margin-bottom:16px;padding:8px 20px;background:#4648d4;color:white;border:none;border-radius:20px;cursor:pointer;font-size:12px">
+    <button onclick="window.print()" style="margin-bottom:16px;padding:8px 20px;background:#a70016;color:white;border:none;border-radius:20px;cursor:pointer;font-size:12px">
       🖨️ Imprimer / Enregistrer en PDF
     </button>
     <h1>' . $titre . '</h1>
@@ -105,7 +105,7 @@ if ($format === 'excel') {
         </tr>';
     }
     echo '</tbody></table>
-    <div class="footer">Évasio — Application de gestion des congés</div>
+    <div class="footer">IUC — Application de gestion des congés</div>
     </body></html>';
 } else {
     header('Location:' . APP_URL . '/rapports.php');

@@ -1,6 +1,6 @@
 <?php
 // =============================================
-//  ÉVASIO — Dashboard (adaptatif par rôle)
+//  IUC — Dashboard (adaptatif par rôle)
 // =============================================
 require_once __DIR__ . '/includes/functions.php';
 requireAuth();
